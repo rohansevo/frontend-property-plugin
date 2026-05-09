@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:10023/wp-json/plp/v1";
+const BASE_URL = "http://localhost:10043/wp-json/plp/v1";
 
 export const getProperties = async (filters = {}) => {
    let url = `${BASE_URL}/properties?`;
