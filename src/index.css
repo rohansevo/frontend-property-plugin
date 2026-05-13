@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.property-banner {
+  width: 100%;
+  min-height: 500px;
+
+  background-image: url('/public/images/property_banner.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.banner-overlay {
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.banner-overlay h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.banner-overlay p {
+  font-size: 20px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .property-banner {
+    min-height: 350px;
+    padding: 15px;
+  }
+
+  .banner-overlay h1 {
+    font-size: 32px;
+  }
+
+  .banner-overlay p {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .property-banner {
+    min-height: 280px;
+  }
+
+  .banner-overlay {
+    padding: 20px;
+  }
+
+  .banner-overlay h1 {
+    font-size: 24px;
+  }
+
+  .banner-overlay p {
+    font-size: 14px;
+  }
+}

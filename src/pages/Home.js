@@ -4,6 +4,9 @@ import PropertyCard from "../components/PropertyCard";
 import { getProperties } from "../services/api";
 import { useEffect } from "react";
 import PropertyCarousel from "../components/PropertyCarousel";
+import PropertyBanner from "../components/PropertyBanner";
+import SplitHero from "../components/SplitHero";
+import PopularCities from "../components/PopularCities";
 
 function Home() {
   const [properties, setProperties] = useState([]);
@@ -31,7 +34,7 @@ function Home() {
 
   return (
     <div>
-      <h1 className="text-4xl text-center font-bold">Property Listing</h1>
+      <PropertyBanner />
 
       <Filter onSearch={handleSearch} />
 
@@ -50,6 +53,8 @@ function Home() {
       {properties.map(item => (
         <PropertyCard key={item.id} item={item} />
       ))}
+      <SplitHero />
+      <PopularCities />
       <PropertyCarousel />
     </div>
   );
