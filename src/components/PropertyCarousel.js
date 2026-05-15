@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getProperties } from "../services/api";
+import {getFeaturedProperties} from "../services/api";
 
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,15 +18,15 @@ import {
 
 function PropertyCarousel() {
 
-  const [properties, setProperties] = useState([]);
+  const [FeaturedProperties, setFeaturedProperties] = useState([]);
 
   useEffect(() => {
 
     async function loadProperties() {
 
-      const data = await getProperties();
+      const data = await getFeaturedProperties();
 
-      setProperties(data);
+      setFeaturedProperties(data);
     }
 
     loadProperties();
@@ -78,7 +78,7 @@ function PropertyCarousel() {
         }}
       >
 
-        {properties.map((item) => (
+        {FeaturedProperties.map((item) => (
 
           <SwiperSlide key={item.id}>
 

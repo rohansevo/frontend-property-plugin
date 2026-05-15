@@ -19,7 +19,7 @@ function Filter({ onSearch }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-white shadow-md rounded-2xl p-6 mt-6 flex flex-col md:flex-row gap-4 items-center max-w-7xl mx-auto -mt-12"
+      className="bg-white shadow-md rounded-2xl p-6 flex flex-col md:flex-row gap-4 items-center max-w-7xl mx-auto -mt-12"
     >
       {/* Price Dropdown */}
       <select

@@ -1,4 +1,5 @@
 import React from "react";
+import propImg from "../assets/images/prop_img.webp";
 
 const HeroSection = () => {
   return (
@@ -24,7 +25,7 @@ const HeroSection = () => {
           {/* Left Image */}
           <div className="flex-1 w-full">
             <img
-              src="../images/prop_img.webp"
+              src={propImg}
               alt="Modern Living Room"
               className="w-full rounded-xl object-cover shadow-md"
             />

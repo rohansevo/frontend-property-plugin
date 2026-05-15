@@ -1,50 +1,50 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Delhi from "../assets/images/delhi_ncr.webp";
+import Bangalore from "../assets/images/banglore.webp";
+import Pune from "../assets/images/pune.webp";
+import Mumbai from "../assets/images/Mumbai.webp";
+import Hyderabad from "../assets/images/hyderabad.webp";
+import Kolkata from "../assets/images/kolkata.webp";
 
 import "swiper/css";
 
 const cities = [
-  {
+   {
     name: "Delhi / NCR",
     properties: "255,000+ Properties",
-    image:
-      "https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=800",
+    image: Delhi,
   },
   {
     name: "Bangalore",
     properties: "82,000+ Properties",
-    image:
-      "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?q=80&w=800",
+    image: Bangalore,
   },
   {
     name: "Pune",
     properties: "67,000+ Properties",
-    image:
-      "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?q=80&w=800",
+    image: Pune,
   },
   {
     name: "Mumbai",
     properties: "78,000+ Properties",
-    image:
-      "https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?q=80&w=800",
+    image: Mumbai,
   },
   {
     name: "Hyderabad",
     properties: "42,000+ Properties",
-    image:
-      "https://images.unsplash.com/photo-1566552881560-0be862a7c445?q=80&w=800",
+    image: Hyderabad,
   },
   {
     name: "Kolkata",
     properties: "47,000+ Properties",
-    image:
-      "https://images.unsplash.com/photo-1558431382-27e303142255?q=80&w=800",
+    image: Kolkata,
   },
 ];
 
 function TopCities() {
   return (
-    <section className="w-full py-16 bg-gray-50">
+    <section className="w-full py-16 bg-gray-50 mt-10">
       <div className="max-w-7xl mx-auto px-4">
         
         {/* Heading */}
