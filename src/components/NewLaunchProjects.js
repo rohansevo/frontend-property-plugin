@@ -25,7 +25,7 @@ function NewLaunchProjects() {
 
   return (
 
-    <div className="mt-20 px-6">
+    <div id="new-launch-projects" className="mt-20 px-6">
 
       <h2 className="text-4xl font-bold mb-10">
         Newly Launched Projects
